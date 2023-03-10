@@ -8,7 +8,9 @@
   align-items: center;
   margin-top: 61px;
   overflow: hidden;
-  @media screen and (max-width: 940px) {
+}
+@media screen and (max-width: 940px) {
+  .App {
     margin: 53px 0 0 0;
     padding: 0;
   }
@@ -23,8 +25,9 @@
   flex-wrap: wrap;
   width: 100%;
   max-width: 1140px;
-
-  @media screen and (max-width: 940px) {
+}
+@media screen and (max-width: 940px) {
+  .header {
     z-index: 99;
     background: #0e1014;
     justify-content: center;
@@ -47,8 +50,9 @@
   flex-direction: column;
   align-items: start;
   gap: 10px;
-
-  @media screen and (max-width: 940px) {
+}
+@media screen and (max-width: 940px) {
+  .logo {
     display: none;
   }
 }
@@ -68,15 +72,16 @@
   font-size: 16px;
   width: 100%;
   max-width: 503px;
-
-  @media screen and (max-width: 940px) {
+}
+@media screen and (max-width: 940px) {
+  .important {
     font-size: 12px;
     justify-content: center;
     gap: 16px;
     text-transform: uppercase;
-    :last-child {
-      display: none;
-    }
+  }
+  .important :last-child {
+    display: none;
   }
 }
 
@@ -85,8 +90,9 @@
   flex-direction: row;
   gap: 48.67px;
   align-items: flex-start;
-
-  @media screen and (max-width: 940px) {
+}
+@media screen and (max-width: 940px) {
+  .header-right {
     display: none;
   }
 }
@@ -110,8 +116,9 @@
   width: 100%;
   max-width: 1140px;
   margin-bottom: 20px;
-
-  @media screen and (max-width: 940px) {
+}
+@media screen and (max-width: 940px) {
+  .wrapper {
     z-index: 5;
     align-items: center;
     padding: 0 10px 10px;
@@ -125,35 +132,33 @@
   margin-top: 0;
   margin-bottom: 0;
   position: relative;
-
-  @media screen and (max-width: 940px) {
+}
+@media screen and (max-width: 940px) {
+  .hero {
     flex-direction: column;
     gap: 45px;
     padding: 40px 34px 59px 15px;
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: url('../public/img/noise.png');
-      z-index: 1;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 2;
-      background: radial-gradient(238.53% 189.02% at 3.2% 3.49%, rgba(255, 246, 233, 0.1) 0%, rgba(26, 29, 35, 0.1) 26.62%, rgba(26, 29, 35, 0.1) 52.1%, rgba(26, 29, 35, 0.01) 70.17%, rgba(26, 29, 35, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
-    ;
-      backdrop-filter: blur(7.5px);
-    }
-
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../public/img/noise.png");
+    z-index: 1;
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: radial-gradient(238.53% 189.02% at 3.2% 3.49%, rgba(255, 246, 233, 0.1) 0%, rgba(26, 29, 35, 0.1) 26.62%, rgba(26, 29, 35, 0.1) 52.1%, rgba(26, 29, 35, 0.01) 70.17%, rgba(26, 29, 35, 0) 100%);
+    backdrop-filter: blur(7.5px);
   }
 }
 
@@ -162,7 +167,9 @@
   flex-direction: column;
   justify-content: start;
   gap: 30px;
-  @media screen and (max-width: 940px) {
+}
+@media screen and (max-width: 940px) {
+  .hero-left {
     gap: 15px;
     z-index: 5;
   }
@@ -172,9 +179,10 @@
   font-size: 48px;
   text-align: start;
   display: block;
-  @media screen and (max-width: 940px) {
+}
+@media screen and (max-width: 940px) {
+  .earn-more {
     font-size: 36px;
-
   }
 }
 
@@ -184,15 +192,15 @@
   font-weight: 900;
   font-size: 48px;
   color: #e4e5ea;
-  @media screen and (max-width: 940px) {
+}
+@media screen and (max-width: 940px) {
+  .with-welbex {
     font-size: 36px;
-
   }
 }
 
 .developing-sales {
   font-size: 18px;
-
 }
 
 .welbex-colorfull {
@@ -205,7 +213,9 @@
   background-image: linear-gradient(to right, #fcb045 0%, #ff3f78 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  @media screen and (max-width: 940px) {
+}
+@media screen and (max-width: 940px) {
+  .welbex-colorfull-free {
     text-transform: lowercase;
   }
 }
@@ -221,11 +231,12 @@
   text-align: end;
   font-weight: 700;
   font-size: 18px;
-  @media screen and (max-width: 940px) {
+}
+@media screen and (max-width: 940px) {
+  .hero-right {
     align-items: start;
     text-align: start;
     z-index: 5;
-
   }
 }
 
@@ -243,7 +254,9 @@
   grid-auto-flow: column;
   gap: 30px;
   margin-top: 40px;
-  @media screen and (max-width: 940px) {
+}
+@media screen and (max-width: 940px) {
+  .columns {
     display: none;
     gap: 15px;
   }
@@ -266,7 +279,9 @@
 
 .columns-mobile {
   display: none;
-  @media screen and (max-width: 940px) {
+}
+@media screen and (max-width: 940px) {
+  .columns-mobile {
     display: grid;
     flex-direction: row;
     grid-template-rows: 1fr 1fr;
@@ -275,7 +290,6 @@
     gap: 15px;
     margin-top: 40px;
     vertical-align: center;
-
   }
 }
 
@@ -284,7 +298,6 @@
   font-family: Montserrat, sans-serif;
   font-weight: 400;
   position: relative;
-
 }
 
 .custom-dash {
@@ -297,7 +310,6 @@
   display: inline-block;
   position: relative;
   top: -25%;
-
 }
 
 .button {
@@ -308,7 +320,9 @@
   color: #e5e6eb;
   padding: 21px 35px;
   cursor: pointer;
-  @media screen and (max-width: 940px) {
+}
+@media screen and (max-width: 940px) {
+  .button {
     display: none;
   }
 }
@@ -319,20 +333,13 @@
   height: 83px;
   left: 36%;
   top: 7.5%;
-
-  background: radial-gradient(
-                  64% 64% at 27.25% 26.5%,
-                  rgba(255, 208, 208, 0.536) 0%,
-                  rgba(212, 93, 93, 0.264) 59.67%,
-                  rgba(167, 49, 49, 0.248) 78.59%,
-                  rgba(130, 25, 25, 0.248) 100%
-  )
-  /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
-;
+  background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.536) 0%, rgba(212, 93, 93, 0.264) 59.67%, rgba(167, 49, 49, 0.248) 78.59%, rgba(130, 25, 25, 0.248) 100%);
   box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
   backdrop-filter: blur(2px);
   border-radius: 50%;
-  @media screen and (max-width: 940px) {
+}
+@media screen and (max-width: 940px) {
+  .ball-red {
     display: none;
   }
 }
@@ -355,7 +362,9 @@
   border-radius: 50%;
   filter: blur(196px);
   z-index: 1;
-  @media screen and (max-width: 940px) {
+}
+@media screen and (max-width: 940px) {
+  .red-light {
     display: none;
   }
 }
@@ -366,20 +375,14 @@
   height: 28px;
   left: 56.7%;
   top: 55%;
-
-  background: radial-gradient(
-                  64% 64% at 27.25% 26.5%,
-                  rgba(255, 208, 208, 0.48) 0%,
-                  rgba(212, 93, 93, 0.248) 59.67%,
-                  rgba(167, 49, 49, 0.264) 78.59%,
-                  rgba(130, 25, 25, 0.232) 100%
-  )
-;
+  background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.48) 0%, rgba(212, 93, 93, 0.248) 59.67%, rgba(167, 49, 49, 0.264) 78.59%, rgba(130, 25, 25, 0.232) 100%);
   box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
   filter: blur(2.5px);
   backdrop-filter: blur(2px);
   border-radius: 50%;
-  @media screen and (max-width: 940px) {
+}
+@media screen and (max-width: 940px) {
+  .ball-red-small {
     display: none;
   }
 }
@@ -390,21 +393,14 @@
   height: 60px;
   left: 60%;
   top: -1%;
-
   border-radius: 50%;
-
-  background: radial-gradient(
-                  64% 64% at 27.25% 26.5%,
-                  rgba(236, 208, 255, 0.64) 0%,
-                  rgba(161, 93, 207, 0.24) 59.67%,
-                  rgba(118, 49, 164, 0.208) 78.59%,
-                  rgba(86, 24, 128, 0.232) 100%
-  )
-;
+  background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(236, 208, 255, 0.64) 0%, rgba(161, 93, 207, 0.24) 59.67%, rgba(118, 49, 164, 0.208) 78.59%, rgba(86, 24, 128, 0.232) 100%);
   box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
   filter: blur(5px);
   backdrop-filter: blur(2px);
-  @media screen and (max-width: 940px) {
+}
+@media screen and (max-width: 940px) {
+  .ball-purple {
     display: none;
   }
 }
@@ -414,7 +410,9 @@
   flex-direction: column;
   margin: 124px 0 0;
   gap: 33px;
-  @media screen and (max-width: 940px) {
+}
+@media screen and (max-width: 940px) {
+  .footer-wrapper {
     margin: 0;
     padding: 0 15px 60px;
     gap: 50px;
@@ -428,12 +426,13 @@
   grid-template-rows: auto auto;
   grid-auto-flow: row;
   grid-template-columns: 1fr 2fr 1fr;
-  @media screen and (max-width: 940px) {
+}
+@media screen and (max-width: 940px) {
+  .footer {
     display: flex;
     flex-direction: column;
     gap: 30px;
     padding: 41px 15px 0;
-
   }
 }
 
@@ -449,7 +448,9 @@
   flex-direction: column;
   gap: 20px;
   align-items: end;
-  @media screen and (max-width: 940px) {
+}
+@media screen and (max-width: 940px) {
+  .footer-column-right {
     align-items: start;
     gap: 10px;
   }
@@ -459,13 +460,15 @@
   font-size: 14px;
   font-weight: 700;
   color: #656566;
-  @media screen and (max-width: 940px) {
+}
+@media screen and (max-width: 940px) {
+  .footer-h1 {
     font-size: 12px;
   }
 }
 
-.footer-h2 {
-  @media screen and (max-width: 940px) {
+@media screen and (max-width: 940px) {
+  .footer-h2 {
     font-size: 14px;
   }
 }
@@ -474,7 +477,9 @@
   display: flex;
   gap: 20px;
   flex-direction: column;
-  @media screen and (max-width: 940px) {
+}
+@media screen and (max-width: 940px) {
+  .footer-h2-wrapper {
     align-items: start;
     gap: 10px;
   }
@@ -497,10 +502,11 @@
   font-size: 12px;
   color: #e4e5ea;
   gap: 48px;
-  @media screen and (max-width: 940px) {
+}
+@media screen and (max-width: 940px) {
+  .footer-columns {
     text-align: start;
     padding: 0 15px 60px;
-
   }
 }
 
@@ -511,7 +517,9 @@
 .red-l-m {
   display: none;
   position: absolute;
-  @media screen and (max-width: 940px) {
+}
+@media screen and (max-width: 940px) {
+  .red-l-m {
     display: block;
     position: absolute;
     width: 211px;
@@ -521,14 +529,15 @@
     background: #961A1A;
     opacity: 0.5;
     filter: blur(196px);
-
   }
 }
 
 .purple-l-m {
   display: none;
   position: absolute;
-  @media screen and (max-width: 940px) {
+}
+@media screen and (max-width: 940px) {
+  .purple-l-m {
     display: block;
     position: absolute;
     width: 259px;
@@ -544,15 +553,16 @@
 .red-b-m {
   display: none;
   position: absolute;
-  @media screen and (max-width: 940px) {
+}
+@media screen and (max-width: 940px) {
+  .red-b-m {
     display: block;
     position: absolute;
     width: 43px;
     height: 43px;
     left: 29px;
     top: 402px;
-    background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.536) 0%, rgba(212, 93, 93, 0.264) 59.67%, rgba(167, 49, 49, 0.248) 78.59%, rgba(130, 25, 25, 0.248) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
-  ;
+    background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.536) 0%, rgba(212, 93, 93, 0.264) 59.67%, rgba(167, 49, 49, 0.248) 78.59%, rgba(130, 25, 25, 0.248) 100%);
     box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
     backdrop-filter: blur(2px);
     border-radius: 50%;
@@ -562,17 +572,20 @@
 .purple-b-m {
   display: none;
   position: absolute;
-  @media screen and (max-width: 940px) {
+}
+@media screen and (max-width: 940px) {
+  .purple-b-m {
     display: block;
     width: 40px;
     height: 40px;
     left: 296px;
     top: 236px;
-    background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(236, 208, 255, 0.64) 0%, rgba(161, 93, 207, 0.24) 59.67%, rgba(118, 49, 164, 0.208) 78.59%, rgba(86, 24, 128, 0.232) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
-  ;
+    background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(236, 208, 255, 0.64) 0%, rgba(161, 93, 207, 0.24) 59.67%, rgba(118, 49, 164, 0.208) 78.59%, rgba(86, 24, 128, 0.232) 100%);
     box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
     filter: blur(5px);
     backdrop-filter: blur(2px);
     border-radius: 50%;
   }
 }
+
+/*# sourceMappingURL=App.module.css.map */
